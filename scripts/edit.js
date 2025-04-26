@@ -28,7 +28,7 @@ async function updateSong(){
         popularity: document.querySelector("#popularity").value,
         genre: document.querySelector("#genre").value ? document.querySelector("#genre").value.split(",") : []
     }
-    const response = await fetch("http://localhost:3000/api/songs/" + songID,{
+    const response = await fetch("https://airy-absorbed-elm.glitch.me/api/songs/" + songID,{
         method: "PUT",
         headers:{
             "Content-Type" : "application/json"
